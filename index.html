@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+
+<head>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
+ <link rel="stylesheet" href="themes/gblack.css" />
+  <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+</head>
+
+<body>
+	<div data-role="page" id="home" data-theme="d">
+		<div data-role="header">
+			<h1>My Mobile App..</h1>
+			<nav data-role="navbar" data-position="fix">
+				<a href="#home" data-role="button" data-icon="home" data-transition="slidefade">Home</a>
+				<a href="#news" data-role="button" data-icon="info" data-transition="slidefade">News</a>
+				<a href="#contact_us" data-role="button" data-icon="star" data-transition="slidefade">Contact Us</a>
+			</nav>
+				
+		</div>
+		
+		<div data-role="main" class="ui-content">
+			<h1>All you need to know about: </h1>
+			<ul data-role="listview" >
+					<li>
+					<a href="#football" data-transition="slidefade"><img src="images/fotbal.jpg"></img>Football</a></li>
+					<li><a href="#basketball" data-transition="slidefade"><img src="images/baschet.jpg"></img>Basketball</a></li>
+					<li><a href="#tenis" data-transition="slidefade"><img src="images/tenis.jpg"></img>Tenis</a></li>
+					<li><a href="#hockey" data-transition="slidefade"><img src="images/hochei.jpg"></img>Ice Hockey</a></li>
+			</ul>
+		</div>
+		
+		<div data-role="footer">
+			<h2>Footer...</h2>
+		</div>
+		
+	</div>
+	
+	<div data-role="page" id="football" data-theme="d">
+		<div data-role="header">
+			<h1>Football News...</h1>
+			<nav data-role="navbar" data-position="fix">
+				<a href="#home" data-icon="back" data-transition="slidefade">Back</a>
+			</nav>
+		</div>	
+		<div data-role="main"class="ui-content">
+			<div data-role="collapsible">
+				
+				<h1>'Mathieu not good enough for Barca'</h1>
+				<p>The Catalans are keen to add some fresh blood to their defence following the departure of Carles Puyol and they have earmarked Mathieu as a useful replacement for the former Spain international.
+
+Barca had been locked in talks with Valencia for a number of weeks over the 30-year-old, but both clubs reached an agreement at last on Monday over a deal worth close to €20 million.<a href="#view">read more...</a></p>
+			</div>
+			<div data-role="collapsible">
+			<h1>Evra completes Juventus move</h1>
+			<p>The 33-year-old, who signed a new one-year contract with United in May, has committed to a two-year deal with the Serie A champions.
+
+Evra's departure leaves £30 million signing Luke Shaw as the only specialist left-back in United's first-team squad, after Alexander Buttner moved to Dynamo Moscow.</p>
+			</div>
+			
+			<div data-role="collapsible">
+			<h1>Transfer Talk: Hummels snubs Barca</h1>
+			</p>Borussia Dortmund defender Mats Hummels has snubbed a move to Barcelona. The Germany international intends to leave Jurgen Klopp's side to join Manchester United.</p>
+			</div>
+		</div>
+	</div>	
+	
+	<div data-role="page" id="basketball" data-theme="d">
+		<div data-role="header">
+			<h1>Basketball News...</h1>
+			<nav data-role="navbar" data-position="fix">
+				<a href="#home" data-icon="back" data-transition="slidefade">Back</a>
+			</nav>
+				
+		</div>
+	</div>	
+	
+	<div data-role="page" id="tenis"data-theme="d">
+		<div data-role="header">
+			<h1>Tenis News...</h1>
+				<nav data-role="navbar" data-position="fix">
+				<a href="#home" data-icon="back" data-transition="slidefade">Back</a>
+			</nav>
+		</div>
+	</div>
+
+	
+	<div data-role="page" id="hockey" data-theme="d">
+		<div data-role="header">
+			<h1>Ice Hockey News....</h1>
+				<nav data-role="navbar" data-position="fix">
+				<a href="#home" data-icon="back" data-transition="slidefade">Back</a>
+			</nav>
+		</div>
+	</div>	
+	
+	
+	
+	<div data-role="page" id="contact_us" data-theme="d">
+		<div data-role="header">
+			<h1>Contact Us...</h1>
+				<nav data-role="navbar" data-position="fix">
+				<a href="#home" data-icon="back" data-transition="slidefade">Back</a>
+			</nav>
+			
+		<div data-role="main"class="ui-content">
+			<form>
+				<label for="area">Write your opinions... </label>
+				<textarea name="area" id="area"placeholder="Tell us how the application roles"></textarea>
+				<label for="rate">Rate our application:</label>
+				Rate: <input type="range" min="0" max="10"/>
+						<input type="submit" name="rate" id="rate" value="Rate App">
+			</form>	
+		</div>
+	</div>
+	
+		<div data-role="page" id="view" data-theme="d">
+			<div data-role="header">
+				<h1>'Mathieu not good enough for Barca</h1>
+					<nav data-role="navbar" data-position="fix">
+						<a href="#home" data-icon="back" data-transition="slidefade">Back</a>
+					</nav>
+			</div>
+			<div data-role="main" class="ui-content">
+		
+				<h1>The Mexico international is not convinced the Valencia man has what it takes to succeed at Camp Nou and believes the €20 million would be better spent elsewhere
+Former Barcelona defender Rafael Marquez has warned the Camp Nou side not to sign Jeremy Mathieu from Valencia as he feels the Frenchman is not good enough for the club.
+
+The Catalans are keen to add some fresh blood to their defence following the departure of Carles Puyol and they have earmarked Mathieu as a useful replacement for the former Spain international.
+
+Barca had been locked in talks with Valencia for a number of weeks over the 30-year-old, but both clubs reached an agreement at last on Monday over a deal worth close to €20 million.
+
+Mathieu is expected to be confirmed as a new Barcelona player in the upcoming days, yet Marquez - who made 240 appearances for Barca - feels the Catalans would be better off turning their attentions elswhere.
+
+"I don't think he has the profile to play for Barcelona and even less so for this price," Marquez said in an interview with RAC1.
+
+"Hopefully they'll think well about this and if they're going to splash out like that, it's for someone who is actually worthwhile."
+
+Mathieu started his professional career with Sochaux and also wore the Toulouse jersey before joining Valencia in the summer of 2009. He has made over 100 official appearances for the Liga outfit since.</h1>
+			</div>
+		</div>
+	
+	
+</body>
+
+</html>
