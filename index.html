@@ -14,7 +14,7 @@
 		<div data-role="header">
 			<h1>My Mobile App..</h1>
 			<nav data-role="navbar" data-position="fix">
-				<a href="#home" data-role="button" data-icon="home" data-transition="slidefade">Home</a>
+				<a href="#home"  data-role="button" data-icon="home" data-transition="slidefade">Home</a>
 				<a href="#news" data-role="button" data-icon="info" data-transition="slidefade">News</a>
 				<a href="#contact_us" data-role="button" data-icon="star" data-transition="slidefade">Contact Us</a>
 			</nav>
@@ -23,7 +23,7 @@
 		
 		<div data-role="main" class="ui-content">
 			<h1>All you need to know about: </h1>
-			<ul data-role="listview" >
+			<ul data-role="listview" data-count-theme="d" data-inset="true" >
 					<li>
 					<a href="#football" data-transition="slidefade"><img src="images/fotbal.jpg"></img>Football</a></li>
 					<li><a href="#basketball" data-transition="slidefade"><img src="images/baschet.jpg"></img>Basketball</a></li>
@@ -44,29 +44,33 @@
 			<nav data-role="navbar" data-position="fix">
 				<a href="#home" data-icon="back" data-transition="slidefade">Back</a>
 			</nav>
+			
 		</div>	
-		<div data-role="main"class="ui-content">
-			<div data-role="collapsible">
+		<div data-role="main" class="ui-content">
+		<div data-role="listview"  data-filter="true" data-filter-placeholder="Search for news..."data-position="fix">
+		
+			<div data-role="collapsible" data-collapsed-icon="info" data-expanded-icon="arrow-u"data-iconpos="right" >
 				
 				<h1>'Mathieu not good enough for Barca'</h1>
 				<p>The Catalans are keen to add some fresh blood to their defence following the departure of Carles Puyol and they have earmarked Mathieu as a useful replacement for the former Spain international.
 
 Barca had been locked in talks with Valencia for a number of weeks over the 30-year-old, but both clubs reached an agreement at last on Monday over a deal worth close to €20 million.<a href="#view">read more...</a></p>
 			</div>
-			<div data-role="collapsible">
+			
+			<div data-role="collapsible" data-collapsed-icon="info" data-expanded-icon="arrow-u"data-iconpos="right">
 			<h1>Evra completes Juventus move</h1>
 			<p>The 33-year-old, who signed a new one-year contract with United in May, has committed to a two-year deal with the Serie A champions.
 
 Evra's departure leaves £30 million signing Luke Shaw as the only specialist left-back in United's first-team squad, after Alexander Buttner moved to Dynamo Moscow.</p>
 			</div>
 			
-			<div data-role="collapsible">
+			<div data-role="collapsible" data-collapsed-icon="info" data-expanded-icon="arrow-u"data-iconpos="right">
 			<h1>Transfer Talk: Hummels snubs Barca</h1>
 			</p>Borussia Dortmund defender Mats Hummels has snubbed a move to Barcelona. The Germany international intends to leave Jurgen Klopp's side to join Manchester United.</p>
 			</div>
 		</div>
 	</div>	
-	
+	</div>
 	<div data-role="page" id="basketball" data-theme="d">
 			<div data-role="header">
 				<h1>Basketball News...</h1>
@@ -75,7 +79,7 @@ Evra's departure leaves £30 million signing Luke Shaw as the only specialist le
 				</nav>
 			</div>
 			<div data-role="main">
-				<div data-role="collapsible">
+				<div data-role="collapsible" data-filter="true" data-filter-placeholder="Search for news..." data-collapsed-icon="info" data-iconpos="right" data-expanded-icon="arrow-u">
 						<h1>Evan Turner Agrees To Deal With Celtics</h1>
 						<p>Evan Turner has agreed upon a contract with the Boston Celtics, according to sources.
 
@@ -112,16 +116,16 @@ Turner finished last season with the Indiana Pacers after starting his career wi
 	<div data-role="page" id="contact_us" data-theme="d">
 		<div data-role="header">
 			<h1>Contact Us...</h1>
-				<nav data-role="navbar" data-position="fix">
+			<nav data-role="navbar" data-position="fix">
 				<a href="#home" data-icon="back" data-transition="slidefade">Back</a>
 			</nav>
-			
+		</div>
 		<div data-role="main"class="ui-content">
 			<form>
 				<label for="area">Write your opinions... </label>
 				<textarea name="area" id="area"placeholder="Tell us how the application roles"></textarea>
 				<label for="rate">Rate our application:</label>
-				Rate: <input type="range" min="0" max="10"/>
+				<input type="range" data-highlight="true" data-mini="true" min="0" max="10"/>
 						<input type="submit" name="rate" id="rate" value="Rate App">
 			</form>	
 		</div>
